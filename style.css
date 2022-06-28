@@ -11,4 +11,27 @@ p{
     color:gray;
 }
 
+.btn.btn-primary {
+    background-color: lightgreen;
+    border: black;
+}
+.nav-link:active,
+.nav-link:hover,
+.nav-link:focus{
+    color: lightgreen !important;
+}
 
+.btn.btn-primary:active,
+.btn.btn-primary:hover,
+.btn.btn-primary:focus {
+    background-color: lightgreen !important;
+}
+
+#coffees{
+    border: 1px solid red;
+}
+
+.coffee{
+    border: 1px solid blue;
+    border-radius: 50%;
+}

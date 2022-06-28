@@ -3,10 +3,10 @@
 // this function can be refactored using mapping
 
 function renderCoffee(coffee) {
-    var html = '<div class="coffee col-6">';
-    html += '<h2>' + coffee.name + '</h2>';
+    var html = '<div class="coffee col-3">';
+    html += '<h2 class="text-center px-3">' + coffee.name + '</h2>';
     if(coffee.roast === "light"|| coffee.roast === "medium"|| coffee.roast === "dark"){
-        html += '<p>' + coffee.roast + '</p>';
+        html += '<p class="text-center px-3">' + coffee.roast + '</p>';
     }
 
     html += '</div>';
@@ -114,36 +114,3 @@ addSubmit.addEventListener('click', function (e) {
 roastSelection.addEventListener('change', function (){
     updateCoffees();
 });
-// OLD JS USED FOR OUR SEARCH FUNCTION =============
-
-// function coffeeSearched(name, array) {
-//     var searchResults = [];
-//     for (var i = 0; i < array.length; i++) {
-//         console.log(array[i].name);
-//         if (array[i].name.includes(name)) {
-//             searchResults.push(array[i]);
-//         }
-//     }
-//     return searchResults;
-// }
-//
-// searchRoast.addEventListener('keyup', function (event){
-//    var input = searchRoast.value;
-//    console.log(input);
-//    let results = coffeeSearched(input, coffees)
-//     tbody.innerHTML = renderCoffees(results);
-// });
-
-// function addCoffeeObj(inputNewCoffee, inputRoast) {
-//     var addingCoffeeName = addingCoffee.value;
-//     var roastAdd = addingRoast.value;
-//
-//
-//     var addCoffee = {id: coffees.length + 1, name: addingCoffeeName, roast: roastAdd, all: 'all'};
-//
-//     if (addingCoffeeName === "" || roastAdd === "Select Roast") {
-//         updateCoffees();
-//     } else {
-//         coffees.push(addCoffee);
-//     }
-//
