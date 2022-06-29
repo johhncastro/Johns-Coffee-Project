@@ -1,6 +1,6 @@
 "use strict"
 
-// this function can be refactored using mapping
+// this function can be refactored using mapping - jc$
 
 function renderCoffee(coffee) {
     var html = '<div class="coffee col-3">';

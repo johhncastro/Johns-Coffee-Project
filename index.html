@@ -11,7 +11,7 @@
 <!--    header -->
 
     <h1 class="text-center pt-2 pb-3">John's Coffee</h1>
-
+<p class="text-center">Browse a selection of coffees and feel free to create a coffee of your own.</p>
 <!--main content which is 2 div containers that hold content-->
 
 
@@ -20,7 +20,7 @@
 
         <!--       BELOW IS THE FORM SELECT FOR ROAST-->
     <div id="search-coffees-form w-100">
-        <h3 class="text-center pb-3">Search Coffees</h3>
+        <h3 class="text-center pb-3 sub-header">Search Coffees</h3>
         <div class="container2 d-flex justify-content-space-between flex-column w-100">
             <form>
                 <h4 class="text-center">Roast</h4>
@@ -30,40 +30,37 @@
                     <option>medium</option>
                     <option>dark</option>
                 </select>
-                <h4 class="text-center">Coffee Name</h4>
-                <input id="search" class="form-control " name="search" type="search" autocomplete="off" placeholder="Enter Coffee here..">
+                <h4 class="text-center pt-3">Coffee Name</h4>
+                <input id="search" class="form-control " name="search" type="search" autocomplete="off" placeholder="Search Coffees">
                 <div class="d-flex justify-content-center pt-3">
-                <button id="submit" type="button" class="btn btn-primary">Update</button>
+                <button id="submit" type="button" class="btn btn-primary" style="display: none">Update</button>
                 </div>
             </form>
         </div>
     </div>
 <!--            the below code is the form to add coffees to the app-->
-            <div id="create-coffee-form">
-            <h3 class="d-flex justify-content-center pb-3 text-center">Add Coffee</h3>
+    <div id="create-coffee-form">
+        <h3 class="d-flex justify-content-center pb-3 text-center sub-header">Add Coffee</h3>
             <form>
                 <h4 class="text-center">Roast</h4>
-                <select id="addRoast-Selection" class="form-select w-100 ">
+                     <select id="addRoast-Selection" class="form-select w-100 ">
                     <option value="Select Roast" disabled selected>Select Roast</option>
                     <option>light</option>
                     <option>medium</option>
                     <option>dark</option>
-                </select>
-                <h4 class="text-center">Add Coffee</h4>
+                    </select>
+                <h4 class="text-center pt-3">Add Coffee</h4>
                 <input class="form-control w-100 " id="addCoffee" name="addCoffee" type="text" autocomplete="off" placeholder="Add your Coffee here..."/>
                 <div class="d-flex justify-content-center pt-3">
-                 <button id="submit2" type="button" class="btn btn-primary">Add Coffee</button>
+                     <button id="submit2" type="button" class="btn btn-primary">Add Coffee</button>
                 </div>
             </form>
-            </div>
-
-
-
-    </section>
+    </div>
+</section>
 
 
 <section id="sub-section-left" class="container-fluid pt-4">
-    <div>
+    <div class="my-2">
         <section id="coffees" class="d-flex flex-wrap justify-content-center align-items-center"></section>
     </div>
 </section>

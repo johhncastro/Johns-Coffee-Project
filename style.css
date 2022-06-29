@@ -33,5 +33,9 @@ p{
 
 .coffee{
     border: 1px solid blue;
-    border-radius: 50%;
+    border-radius: 10px;
+}
+
+.sub-header{
+    text-decoration: underline;
 }
