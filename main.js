@@ -3,7 +3,7 @@
 // this function can be refactored using mapping - jc$
 
 function renderCoffee(coffee) {
-    var html = '<div class="coffee col-3">';
+    var html = '<div class="coffee col-lg-3 col-sm-12">';
     html += '<h2 class="text-center px-3">' + coffee.name + '</h2>';
     if(coffee.roast === "light"|| coffee.roast === "medium"|| coffee.roast === "dark"){
         html += '<p class="text-center px-3">' + coffee.roast + '</p>';
